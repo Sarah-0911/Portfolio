@@ -1,39 +1,59 @@
+@import url("pages/header.css");
+@import url("pages/skills.css");
+@import url("pages/works.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
 /* Divers */
 
 body {
   width: 90%;
   margin: 0 auto;
+  background: #10131c;
 }
 
-/* Header */
-
-.header-flex {
-  display: flex;
-  justify-content: center;
-  gap: 4%;
+.background {
+  margin-bottom: 20px;
+  background-color: #011d28;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px;
 }
 
-.picture {
-  position: relative;
+h1, h2, ul, p, li, a {
+  color: #ecebe4;
 }
 
-.picture h1 {
-  position: absolute;
-  right: 0;
+h1, ul {
+  font-family: 'Manrope', sans-serif;
+}
+h2, ul {
+  font-family: 'Work Sans', sans-serif;
 }
 
-.picture img {
-  width: 360px;
-  height: 400px;
-  object-fit: cover;
-  border-top-right-radius: 200px;
-  border-top-left-radius: 200px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+p, a, .skill {
+  font-family: 'Roboto', sans-serif;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+h2 {
+  border-bottom: 1px solid #c06e52;
+  padding-bottom: 8px;
+  font-weight: 300;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+.about .letter-a {
+  font-size: 2.8rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }

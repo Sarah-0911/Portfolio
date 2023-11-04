@@ -1,0 +1,49 @@
+.bar-container {
+  background-color: #ecebe4;
+  width: 80%;
+  border-radius: 15px;
+}
+
+.skills h2 {
+  margin: 0;
+  border-bottom: 1px solid #c06e52;
+  padding-bottom: 8px;
+}
+
+.flex-skills {
+  display: flex;
+}
+
+.flex-skill {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.skills p {
+  margin: 16px 0 10px 0;
+}
+
+.skill {
+  background-color: #c06e52;
+  color: #ecebe4;
+  text-align: right;
+  font-size: 1rem;
+  border-radius: 15px;
+}
+
+.html, .ui-ux, .design-tools {
+  width: 70%;
+}
+
+.css {
+  width: 60%;
+}
+
+.js {
+  width: 50%;
+}
+
+.ruby {
+  width: 40%;
+}

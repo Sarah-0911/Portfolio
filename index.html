@@ -4,37 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/22b0544532.js" crossorigin="anonymous"></script>
   <title>My Portfolio</title>
 </head>
 <body>
   <header>
     <nav>
       <ul>
-        <li>Home</li>
-        <li>Skills</li>
-        <li>Works</li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Works</a></li>
       </ul>
     </nav>
-    <div class="header-flex">
+    <div class="header-container background">
       <div class="picture">
-        <h1>Sarah<br>&nbsp;&nbsp;Tabet</h1>
+        <h1>Sarah<br>&nbsp;&nbsp;Tabet․</h1>
         <img src="images/profile-picture.jpg" alt="Profile picture">
         <ul class="icons">
-          <li>Mail</li>
-          <li>Linkedin</li>
-          <li>Github</li>
+          <li><i class="fa-solid fa-envelope" style="color: #e1e5ee"></i></li>
+          <li><i class="fa-brands fa-linkedin" style="color: #e1e5ee"></i></li>
+          <li><i class="fa-brands fa-github" style="color: #e1e5ee"></i></li>
         </ul>
       </div>
       <div class="about">
-        <h3>About me</h3>
-        <p>Front-end Developer, Designer, based in Lyon</p>
+        <h2><span class="letter-a">A</span>bout me</h2>
+        <p>Front-end Developer and Designer,<br> based in Lyon.</p>
         <a href="#">Know more</a>
       </div>
     </div>
   </header>
-  <section class="skills">
+  <section class="skills background">
+    <h2>Skills</h2>
+    <div class="flex-skills">
+      <div class="flex-skill">
+        <p>HTML</p>
+        <div class="bar-container">
+          <div class="skill html">70%</div>
+        </div>
+        <p>CSS</p>
+        <div class="bar-container">
+          <div class="skill css">60%</div>
+        </div>
+        <p>UI & UX</p>
+        <div class="bar-container">
+          <div class="skill ui-ux">70%</div>
+        </div>
+      </div>
+      <div class="flex-skill">
+        <p>JavaScript</p>
+        <div class="bar-container">
+          <div class="skill js">50%</div>
+        </div>
+        <p>Design Tools</p>
+        <div class="bar-container">
+          <div class="skill design-tools">70%</div>
+        </div>
+        <p>Ruby</p>
+        <div class="bar-container">
+          <div class="skill ruby">40%</div>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="works">
+  <section class="works background">
   </section>
 </body>
 </html>
