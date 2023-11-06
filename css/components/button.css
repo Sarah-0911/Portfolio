@@ -1,0 +1,64 @@
+.btn {
+  width: 130px;
+  height: 40px;
+  padding: 0;
+  color: #ecebe4;
+  border-radius: 5px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  line-height: 42px;
+  border: none;
+  background: linear-gradient(0deg, #C63D2F 0%, #E25E3E 100%);
+}
+
+.btn:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.btn::before, .btn::after {
+  content:'';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #ecebe4;
+  transition: 400ms ease all;
+}
+
+.btn::after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.btn:hover::before, .btn:hover::after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+.btn:active::before, .btn:active::after {
+  background: #E25E3E;
+  transition: 100ms ease all;
+}
+
+/* .btn a:active {
+  transition: 400ms ease all;
+  color: #C63D2F;
+} */
+
+/* Class pour JS */
+
+.orange-text {
+  color: #E25E3E;
+  transition: 100ms ease all;
+}

@@ -9,27 +9,27 @@
 </head>
 <body>
   <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Skills</a></li>
-        <li><a href="#">Works</a></li>
-      </ul>
-    </nav>
-    <div class="header-container background">
+    <div class="header-container">
       <div class="picture">
         <h1>Sarah<br>&nbsp;&nbsp;Tabet․</h1>
         <img src="images/profile-picture.jpg" alt="Profile picture">
         <ul class="icons">
-          <li><i class="fa-solid fa-envelope" style="color: #e1e5ee"></i></li>
-          <li><i class="fa-brands fa-linkedin" style="color: #e1e5ee"></i></li>
-          <li><i class="fa-brands fa-github" style="color: #e1e5ee"></i></li>
+          <li><a href="#"><i class="fa-solid fa-envelope icon" style="color: #e1e5ee"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin icon" style="color: #e1e5ee"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-github icon" style="color: #e1e5ee"></i></a></li>
         </ul>
       </div>
       <div class="about">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Works</a></li>
+          </ul>
+        </nav>
         <h2><span class="letter-a">A</span>bout me</h2>
         <p>Front-end Developer and Designer,<br> based in Lyon.</p>
-        <a href="#">Know more</a>
+        <button id="know-btn" class="btn"><a href="#">Know more</a></button>
       </div>
     </div>
   </header>
@@ -68,5 +68,6 @@
   </section>
   <section class="works background">
   </section>
+  <script src="script.js"></script>
 </body>
 </html>

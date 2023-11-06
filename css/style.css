@@ -1,3 +1,5 @@
+@import url("components/button.css");
+
 @import url("pages/header.css");
 @import url("pages/skills.css");
 @import url("pages/works.css");
@@ -7,17 +9,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
 /* Divers */
 
-body {
+/* body {
   width: 90%;
   margin: 0 auto;
   background: #10131c;
+} */
+
+* {
+  box-sizing: border-box;
 }
 
-.background {
-  margin-bottom: 20px;
-  background-color: #011d28;
+body {
+  margin: 0;
+  background: linear-gradient(#1f2021, #020d11);
   padding: 40px 30px;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 2px 2px 10px;
 }
 
@@ -25,10 +31,10 @@ h1, h2, ul, p, li, a {
   color: #ecebe4;
 }
 
-h1, ul {
+h1 {
   font-family: 'Manrope', sans-serif;
 }
-h2, ul {
+h2 {
   font-family: 'Work Sans', sans-serif;
 }
 

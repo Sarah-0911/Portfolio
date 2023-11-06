@@ -2,18 +2,30 @@ nav ul, .icons {
   display: flex;
 }
 
-nav ul {
-  justify-content: end;
-  gap: 6%;
-  margin: 10px 0;
-  font-size: 1.6rem;
-  letter-spacing: .1rem;
-}
-
 .header-container {
+  margin: 30px 0;
   display: flex;
   justify-content: center;
-  gap: 6%;
+  gap: 10%;
+  padding: 40px 20px 0 20px;
+  background-size: cover;
+  background-image: url("../../images/portfolio-background.jpg");
+  /* background: linear-gradient(#4a5568, #011d28); */
+  border-radius: 5px;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  position:absolute;
+  top: -156px;
+
 }
 
 .picture {
@@ -36,30 +48,59 @@ nav ul {
   height: 400px;
   object-fit: cover;
   border-top-right-radius: 180px;
-  border-top-left-radius: 30px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  box-shadow: 0 0 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 0 90px;
 }
 
 .icons {
   justify-content: center;
-  gap: 10%;
+  gap: 14%;
   padding: 0;
   font-size: 1.8rem;
-  margin-bottom: 0;
+}
+
+.icons .icon:hover {
+  color: #c06e52 !important;
+  transition: color 300ms ease;
 }
 
 .about {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 100px;
+  position: relative;
+  height: 100%;
+  padding: 40px 20px 20px 40px;
+  position: relative;
+}
+
+.about::before, .about::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ecebe4;
+}
+
+.about::before {
+  top: 0;
+  left: 0;
+  border-width: 1px 0 0 1px;
+}
+
+.about::after {
+  bottom: 0;
+  right: 0;
+  border-width: 0 1px 1px 0;
 }
 
 .about h2 {
   border-bottom: 1px solid #c06e52;
   padding-bottom: 8px;
+  margin-top: 0;
   font-weight: 300;
   font-size: 1.8rem;
   letter-spacing: .8px;
@@ -75,12 +116,4 @@ nav ul {
   margin-top: 0;
   line-height: 1.6;
   font-size: 1.2rem;
-}
-
-.about a {
-  background-color: #c06e52;
-  width: 86px;
-  padding: 8px 12px;
-  border-radius: 5px;
-  font-weight: bold;
 }
