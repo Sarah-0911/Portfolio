@@ -8,9 +8,7 @@ nav ul, .icons {
   justify-content: center;
   gap: 10%;
   padding: 40px 20px 0 20px;
-  background-size: cover;
-  background-image: url("../../images/portfolio-background.jpg");
-  /* background: linear-gradient(#4a5568, #011d28); */
+  background-color: #393E46;
   border-radius: 5px;
 }
 
@@ -25,6 +23,12 @@ nav ul {
   letter-spacing: .1rem;
   position:absolute;
   top: -156px;
+  font-variant: small-caps;
+}
+
+nav ul a:hover {
+  color: #00ADB5;
+  transition: color 300ms ease;
 
 }
 
@@ -40,7 +44,7 @@ nav ul {
   font-size: 3.6rem;
   letter-spacing: .1rem;
   line-height: 3.6rem;
-  text-shadow: 4px 4px 2px #011d28;
+  text-shadow: 2px 2px 2px #222831;
 }
 
 .picture img {
@@ -51,7 +55,7 @@ nav ul {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  box-shadow: 0 0 90px;
+  /* box-shadow: 0 0 4px; */
 }
 
 .icons {
@@ -62,7 +66,7 @@ nav ul {
 }
 
 .icons .icon:hover {
-  color: #c06e52 !important;
+  color: #00ADB5 !important;
   transition: color 300ms ease;
 }
 
@@ -98,7 +102,7 @@ nav ul {
 }
 
 .about h2 {
-  border-bottom: 1px solid #c06e52;
+  border-bottom: 1px solid #EEE;
   padding-bottom: 8px;
   margin-top: 0;
   font-weight: 300;
@@ -107,7 +111,7 @@ nav ul {
 }
 
 .about .letter-a {
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-weight: 200;
   font-style: italic;
 }

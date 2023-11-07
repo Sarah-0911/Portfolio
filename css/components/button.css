@@ -15,7 +15,7 @@
   outline: none;
   line-height: 42px;
   border: none;
-  background: linear-gradient(0deg, #C63D2F 0%, #E25E3E 100%);
+  background: linear-gradient(0deg, #00ADB5 0%, #00ADB5 100%);
 }
 
 .btn:hover {
@@ -47,7 +47,7 @@
 }
 
 .btn:active::before, .btn:active::after {
-  background: #E25E3E;
+  background: #00ADB5;
   transition: 100ms ease all;
 }
 
@@ -58,7 +58,7 @@
 
 /* Class pour JS */
 
-.orange-text {
-  color: #E25E3E;
+.green-text {
+  color: #00ADB5;
   transition: 100ms ease all;
 }
