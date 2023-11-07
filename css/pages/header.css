@@ -27,7 +27,7 @@ nav ul {
 }
 
 nav ul a:hover {
-  color: #00ADB5;
+  color: #63a46c;
   transition: color 300ms ease;
 
 }
@@ -66,7 +66,7 @@ nav ul a:hover {
 }
 
 .icons .icon:hover {
-  color: #00ADB5 !important;
+  color: #63a46c !important;
   transition: color 300ms ease;
 }
 

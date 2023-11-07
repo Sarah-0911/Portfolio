@@ -1,3 +1,7 @@
+.skills {
+  margin-bottom: 60px;
+}
+
 .bar-container {
   background-color: #ecebe4;
   width: 80%;
@@ -12,6 +16,7 @@
 
 .flex-skills {
   display: flex;
+  margin-top: 24px;
 }
 
 .flex-skill {
@@ -25,11 +30,11 @@
 }
 
 .skill {
-  background-color: #00ADB5;
+  background-color: #63a46c;
   color: #ecebe4;
   text-align: right;
   font-size: 1rem;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .html, .ui-ux, .design-tools {
