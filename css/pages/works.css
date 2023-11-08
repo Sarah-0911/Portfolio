@@ -1,4 +1,5 @@
 .works h2 {
+  letter-spacing: .2em;
   margin: 0;
   border-bottom: 1px solid #EEE;
   padding-bottom: 8px;
@@ -6,26 +7,38 @@
 
 .cards {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 6%;
 }
 
-.lettering {
+.card {
   margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("../../images/lettering.jpg");
   background-size: cover;
-  display: flex;
   width: 200px;
   height: 200px;
-  object-fit: cover;
+  max-width: 200px;
+  max-height: 200px;
   border-radius: 5px;
+  overflow: hidden;
+  transition: filter .4s, transform .6s;
 }
 
-.lettering p {
+.card:hover {
+  cursor: pointer;
+  filter: grayscale(80%);
+  transform: scale(1.1);
+}
+
+.card a {
   font-size: 2em;
   font-weight: 600;
   text-shadow: 2px 2px 2px #222831;
+}
+
+.lettering {
+  background-image: url("../../images/lettering.jpg");
 }
