@@ -1,3 +1,21 @@
 .description {
-  margin-bottom: 60px;
+  margin: 20px auto;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  border: 2px solid #393E46;
+}
+
+.description p {
+  width: 40%;
+}
+
+.description .profile {
+  width: 300px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 0 4px;
 }
