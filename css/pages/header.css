@@ -1,10 +1,10 @@
 .header-container {
   display: flex;
   justify-content: center;
-  gap: 6%;
   padding: 10px;
   background-color: #393E46;
   border-radius: 5px;
+  position: relative;
 }
 
 .hello {
@@ -14,6 +14,8 @@
 .hello .hello-img {
   filter: hue-rotate(300deg);
   height: 500px;
+  margin-right: 10rem;
+  width: 400px;
   border-top-right-radius: 180px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -22,14 +24,15 @@
 
 .hello h1 {
   position: absolute;
-  bottom: 120px;
-  margin-top: 20px;
-  left: 160px;
+  bottom: 200px;
+  margin: 0;
+  width: 100%;
+  left: 80px;
   font-weight: 600;
-  font-size: 3.6rem;
+  font-size: 3.4rem;
   letter-spacing: .1rem;
   line-height: 3.6rem;
-  text-shadow: 2px 2px 2px #222831;
+  text-shadow: 0 0 2px #222831;
   z-index: 1;
 }
 
@@ -38,13 +41,6 @@
   height: 340px;
   object-fit: cover;
   /* box-shadow: 0 0 4px; */
-}
-
-.picture {
-  margin: 30px 0;
-  display: flex;
-  justify-content: center;
-  gap: 6%;
 }
 
 nav ul, .icons {
@@ -75,9 +71,10 @@ nav ul, .icons {
 
 nav ul {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 10%;
-  width: 100%;
+  width: 40%;
   margin: 0;
   padding: 0;
   font-size: 2rem;
@@ -85,6 +82,9 @@ nav ul {
   /* position:absolute;
   top: -156px; */
   font-variant: small-caps;
+  position: absolute;
+  right: 80px;
+  z-index: 1;
 }
 
 nav ul a:hover {
@@ -92,13 +92,18 @@ nav ul a:hover {
   transition: color 300ms ease;
 }
 
-.about {
+.picture {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
+}
+
+.about {
   margin-top: 100px;
+  margin-bottom: 20px;
   position: relative;
-  padding: 20px 10px 0px 20px}
+  padding: 20px 10px 0px 20px;
+}
 
 .about::before, .about::after {
   content: "";
