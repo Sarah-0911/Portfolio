@@ -11,13 +11,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
-/* Divers */
 
-/* body {
-  width: 90%;
-  margin: 0 auto;
-  background: #10131c;
-} */
+/* Divers */
 
 * {
   box-sizing: border-box;
@@ -27,9 +22,12 @@ body {
   margin: 0;
   background-color: #222831;
   /* background: linear-gradient(#1f2021, #020d11); */
-  padding: 40px 30px;
   border-radius: 5px;
   box-shadow: 2px 2px 10px;
+}
+
+.padding {
+  padding: 30px 20px;
 }
 
 h1, h2, ul, p, li, a {
@@ -56,23 +54,65 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   /* Pour un écran < 960px, cette classe CSS s'applique */
-  .container {
-    width: 700px;
+  .hello .hello-img {
+    margin-right: 3rem;
+    width: 380px;
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 778px) {
   /* Pour un écran < 720px, cette classe CSS s'applique */
-  .container {
-    width: 500px;
+  nav ul {
+    width: 100%;
+    right: 0;
+  }
+  .hello .hello-img {
+    margin-right: 3rem;
+    width: 380px;
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 576px) {
   /* Pour un écran < 540px, cette classe CSS s'applique */
-  .container {
-    width: 300px;
+  .header-container {
+    flex-direction: column;
+  }
+  .hello .hello-img {
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    margin: 0 auto;
+  }
+  .header-item {
+    display: flex;
+  }
+  .hello h1 {
+    bottom: 10px;
+    left: 180px;
+    font-size: 2.8rem;
+  }
+  .about {
+    width: 60%;
+    margin: 20px auto;
+    padding: 0;
+  }
+  .about::before, .about::after {
+    display: none;
+  }
+  .description {
+    flex-direction: column;
+    align-items: start;
+  }
+  .description .profile {
+    width: 220px;
+    height: 260px;
+  }
+  .description h2 {
+    margin-bottom: 0;
+  }
+  .description-text {
+    width: 100%;
   }
 }

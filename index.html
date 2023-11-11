@@ -8,13 +8,13 @@
   <title>My Portfolio</title>
 </head>
 <body>
-  <header>
+  <header id="home-anchor">
     <div class="header-container">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Works</a></li>
+          <li><a href="#home-anchor">Home</a></li>
+          <li><a href="#skills-anchor">Skills</a></li>
+          <li><a href="#works-anchor">Works</a></li>
         </ul>
       </nav>
       <div class="hello header-item">
@@ -35,68 +35,70 @@
       </div>
     </div>
   </header>
-  <section class="description">
-    <img class="profile" src="images/profile-picture.jpg" alt="Profile picture">
-    <div class="description-text">
-      <h2>Sarah Tabet</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Itaque perspiciatis totam nemo mollitia iste eius illo fugit,
-        quos, blanditiis autem ullam, animi illum harum quas velit quidem voluptatibus ipsum. Ipsam.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div>
-  </section>
-  <section class="skills background">
-    <h2>Skills</h2>
-    <div class="flex-skills">
-      <div class="flex-skill">
-        <p>HTML</p>
-        <div class="bar-container">
-          <div class="skill html">70%</div>
+  <div class="padding">
+    <section class="description">
+      <img class="profile" src="images/profile-picture.jpg" alt="Profile picture">
+      <div class="description-text">
+        <h2>Sarah Tabet</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Itaque perspiciatis totam nemo mollitia iste eius illo fugit,
+          quos, blanditiis autem ullam, animi illum harum quas velit quidem voluptatibus ipsum. Ipsam.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </section>
+    <section class="skills background">
+      <h2 id="skills-anchor">Skills</h2>
+      <div class="flex-skills">
+        <div class="flex-skill">
+          <p>HTML</p>
+          <div class="bar-container">
+            <div class="skill html">70%</div>
+          </div>
+          <p>CSS</p>
+          <div class="bar-container">
+            <div class="skill css">60%</div>
+          </div>
+          <p>UI & UX</p>
+          <div class="bar-container">
+            <div class="skill ui-ux">70%</div>
+          </div>
         </div>
-        <p>CSS</p>
-        <div class="bar-container">
-          <div class="skill css">60%</div>
-        </div>
-        <p>UI & UX</p>
-        <div class="bar-container">
-          <div class="skill ui-ux">70%</div>
+        <div class="flex-skill">
+          <p>JavaScript</p>
+          <div class="bar-container">
+            <div class="skill js">50%</div>
+          </div>
+          <p>Design Tools</p>
+          <div class="bar-container">
+            <div class="skill design-tools">70%</div>
+          </div>
+          <p>Ruby</p>
+          <div class="bar-container">
+            <div class="skill ruby">40%</div>
+          </div>
         </div>
       </div>
-      <div class="flex-skill">
-        <p>JavaScript</p>
-        <div class="bar-container">
-          <div class="skill js">50%</div>
+    </section>
+    <section class="works background">
+      <h2 id="works-anchor">Works</h2>
+      <div class="cards">
+        <div class="card web-projects">
+          <a href="#">Projects</a>
         </div>
-        <p>Design Tools</p>
-        <div class="bar-container">
-          <div class="skill design-tools">70%</div>
+        <div class="card lettering">
+          <a href="#">Lettering</a>
         </div>
-        <p>Ruby</p>
-        <div class="bar-container">
-          <div class="skill ruby">40%</div>
+        <div class="card lettering">
+          <a href="#">Lettering</a>
+        </div>
+        <div class="card lettering">
+          <a href="#">Lettering</a>
         </div>
       </div>
-    </div>
-  </section>
-  <section class="works background">
-    <h2>Works</h2>
-    <div class="cards">
-      <div class="card web-projects">
-        <a href="#">Projects</a>
-      </div>
-      <div class="card lettering">
-        <a href="#">Lettering</a>
-      </div>
-      <div class="card lettering">
-        <a href="#">Lettering</a>
-      </div>
-      <div class="card lettering">
-        <a href="#">Lettering</a>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
