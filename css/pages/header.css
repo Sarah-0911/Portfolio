@@ -28,13 +28,11 @@
   position: absolute;
   bottom: 200px;
   margin: 0;
-  width: 100%;
   left: 80px;
   font-weight: 600;
   font-size: 3.4rem;
   letter-spacing: .1rem;
   line-height: 3.6rem;
-  text-shadow: 0 0 2px #222831;
   z-index: 1;
 }
 
@@ -75,7 +73,7 @@ nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10%;
+  gap: 6%;
   width: 40%;
   margin: 0;
   padding: 0;
